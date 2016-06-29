@@ -1,0 +1,155 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tick Test</title>
+  <meta name="description" content="Front-End project">
+  <meta name="author" content="Bryan Hunt">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+
+</head>
+
+<body>
+<section>
+  <h1> 2 Open Tasks </h1>
+  <button class="float-r">Add Task</button>
+
+  <!-- task -->
+  <div class="task">
+    <div class="task-summary">
+      <div class="col1">
+        <h2>Capture Project Requirements</h2>
+        <p class="small">3 people have entered time to this tasks</p>
+      </div>
+      <div class="col2">
+        <div class="task-summary__hours">
+          <h2>30.00</h2>
+          <p class="label">Budget</p>
+        </div>
+        <div class="task-summary__hours">
+          <h2>21.75</h2>
+          <p class="label">Actual</p>
+        </div>
+      </div>
+      <div class="col3">
+        <div class="task-summary__progress-bar">
+          <div class="task-summary__progress-bar--inner">
+            <span class="align-r">62%</span>
+          </div>
+        </div>
+        <p class="smallest align-c">8.25 hours remaining</p>
+      </div>
+    </div>
+
+    <!-- time table body -->
+    <div class="task-entries-container">
+      <div class="task-entries__header">
+        <h3 class="col1 align-l">People who have entered time</h3>
+        <h3 class="col2 align-r">Time entered</h3>
+        <h3 class="col3 align-r">Date of last entry</h3>
+      </div>
+      <!-- task -->
+      <div class="task-entries__details">
+        <div class="task-entry" id="accordionTrigger">
+          <a class="col1 task-entry__name">Kevin Finn</a>
+          <span class="col2 align-r small">6.00</span>
+          <span class="col3 align-r small">Friday, March 17, 2016</span>
+        </div>
+        <ul class="task-details">
+          <li class="task-details__header">
+            <span class="col1 align-l"><strong>Time Entered On</strong></span>
+            <span class="col2 align-r"><strong>Time Entered</strong></span>
+            <span class="col3 align-l"><strong>Notes</strong></span>
+          </li>
+          <li class="task-details__time-entered">
+            <span class="col1 align-l small">Friday, March 17, 2016</span>
+            <span class="col2 align-r small">6.50</span>
+            <span class="col3 align-l small">Improved code for different basecamp logos</span>
+          </li>
+          <li class="task-details__time-entered">
+            <span class="col1 align-l small">Wednesday, March 15, 2016</span>
+            <span class="col2 align-r small">5.25</span>
+            <span class="col3 align-l small">Improved code for different basecamp logos</span>
+          </li>
+          <li class="task-details__time-entered">
+            <span class="col1 align-l small">Tuesday, March 14, 2016</span>
+            <span class="col2 align-r small">2.00</span>
+            <span class="col3 align-l small">Improved code for different basecamp logos</span>
+          </li>
+        </ul>
+      </div>
+      <!-- task -->
+      <div class="task-entries__details">
+        <div class="task-entry" id="accordionTrigger">
+          <a class="col1 task-entry__name">Dave Ditges</a>
+          <span class="col2 align-r small">13.75</span>
+          <span class="col3 align-r small">Friday, March 17, 2016</span>
+        </div>
+        <ul class="task-details">
+          <li class="task-details__header">
+            <span class="col1 align-l"><strong>Time Entered On</strong></span>
+            <span class="col2 align-r"><strong>Time Entered</strong></span>
+            <span class="col3 align-l"><strong>Notes</strong></span>
+          </li>
+          <li class="task-details__time-entered">
+            <span class="col1 align-l small">Friday, March 17, 2016</span>
+            <span class="col2 align-r small">6.50</span>
+            <span class="col3 align-l small">Improved code for different basecamp logos</span>
+          </li>
+          <li class="task-details__time-entered">
+            <span class="col1 align-l small">Wednesday, March 15, 2016</span>
+            <span class="col2 align-r small">5.25</span>
+            <span class="col3 align-l small">Improved code for different basecamp logos</span>
+          </li>
+          <li class="task-details__time-entered">
+            <span class="col1 align-l small">Tuesday, March 14, 2016</span>
+            <span class="col2 align-r small">2.00</span>
+            <span class="col3 align-l small">Improved code for different basecamp logos</span>
+          </li>
+        </ul>
+      </div>
+      <!-- task -->
+      <div class="task-entries__details">
+        <div class="task-entry" id="accordionTrigger">
+          <a class="col1 task-entry__name">Alban Brooke</a>
+          <span class="col2 align-r small">2.00</span>
+          <span class="col3 align-r small">Friday, March 17, 2016</span>
+        </div>
+        <ul class="task-details">
+          <li class="task-details__header">
+            <span class="col1 align-l"><strong>Time Entered On</strong></span>
+            <span class="col2 align-r"><strong>Time Entered</strong></span>
+            <span class="col3 align-l"><strong>Notes</strong></span>
+          </li>
+          <li class="task-details__time-entered">
+            <span class="col1 align-l small">Friday, March 17, 2016</span>
+            <span class="col2 align-r small">6.50</span>
+            <span class="col3 align-l small">Improved code for different basecamp logos</span>
+          </li>
+          <li class="task-details__time-entered">
+            <span class="col1 align-l small">Wednesday, March 15, 2016</span>
+            <span class="col2 align-r small">5.25</span>
+            <span class="col3 align-l small">Improved code for different basecamp logos</span>
+          </li>
+          <li class="task-details__time-entered">
+            <span class="col1 align-l small">Tuesday, March 14, 2016</span>
+            <span class="col2 align-r small">2.00</span>
+            <span class="col3 align-l small">Improved code for different basecamp logos</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+</footer>
+</body>
+</html>

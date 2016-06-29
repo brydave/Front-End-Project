@@ -1,0 +1,309 @@
+/* == INDEX ================ */
+
+/* 1. Helpers */
+/* 2. Layout */
+/* 3. Typography */
+/* 4. Buttons and links */
+/* 5. Media Queries */
+
+/* ========================= */
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  padding: 50px 0;
+}
+
+/* ========================
+   1. Helpers
+======================== */
+.float-r { float: right; }
+.float-l { float: right; }
+.align-r { text-align: right; }
+.align-l { text-align: left; }
+.align-c { text-align: center; }
+
+/* ========================
+   2. Layout
+======================== */
+section {
+  width: 950px;
+  margin: 0 auto;
+  font-size: .9rem;
+}
+
+.col1,.col2,.col3 { display: inline-block; }
+.col1 { width: 49%; }
+.col2 { width: 20%; padding-right: 20px;}
+.col3 { width: 30%; }
+
+/* task blocks and elements */
+.task {
+  border: 1px solid #eeeeee;
+  margin-top: 20px;
+}
+
+/* task summary */
+.task-summary {
+  background: #eeeeee;
+  padding: 20px;
+}
+.task-summary__hours {
+  display: inline-block;
+}
+.task-summary__hours:first-child {
+  margin: 0 50px 0 0;
+}
+.task-entries-container {
+  background: #ffffff;
+}
+
+/* 1.5 progress bar */
+.task-summary__progress-bar {
+  border: 3px solid #dfdfdf;
+  border-radius: 15px;
+  height: 30px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.task-summary__progress-bar--inner {
+  background: #458d2f;
+  border-radius: 12px;
+  height: 24px;
+  padding: 7px 20px;
+  width: 62%;
+}
+
+.task-summary__progress-bar--inner span {
+  color: #FFF;
+  font-size: 0.7rem;
+  float: right;
+}
+
+/* task details */
+.task-entries__header,
+.task-entry {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.task-entries__header {
+  padding: 20px 20px 10px;
+}
+
+.task-details li {
+  list-style-type: none;
+}
+
+.task-entry {
+  padding: 10px 20px;
+  background: #FFF;
+}
+
+.task-entry:hover,
+.task-entry--open {
+  background: #e5f0fc;
+  cursor: pointer;
+}
+
+.task-details {
+  background: #f2f7fd;
+  display:none;
+}
+
+.task-details li {
+  border-bottom: 1px solid #c2d7f0;
+  padding: 10px 20px;
+}
+
+.task-details li:first-child {
+  border-bottom: none;
+}
+
+.task-details li span:first-child {
+  text-indent: 20px;
+}
+
+/* plus-minus icon-state */
+.task-entry a:before {
+  border-radius: 3px;
+  background: #006bdc;
+  content: "+";
+  color: #FFF;
+  display: inline-block;
+  height: 15px;
+  line-height: 1;
+  margin-right: 5px;
+  transition: all 1s;
+  text-align: center;
+  padding-top: 1px;
+  width: 15px;
+}
+
+.task-entry--open a:before {
+  content: "\2013";
+}
+
+/* ========================
+   3. Typography
+======================== */
+h1,h3,.strong {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+p {
+  font-size: .9rem;
+  line-height: 1.4;
+}
+
+.label {
+  text-transform: uppercase;
+  color: #a2a2a2;
+}
+
+.small,.smallest {
+  color: #a2a2a2;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.smallest {
+  font-size: 0.7rem;
+  line-height: 2;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* ========================
+   4. Buttons and links
+======================== */
+
+a {
+  color: #458d2f;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 1.5;
+}
+
+button {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #458d2f;
+  color: #458d2f;
+  font-weight: 500;
+  outline: none;
+  padding: 7px 20px;
+}
+
+button:hover {
+  background: #458d2f;
+  color: #FFF;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+/* ========================
+   5. Media Queries
+======================== */
+
+/* Genreal Mobile Device ----------- */
+@media only screen and (max-width : 600px) {
+  /* Styles */
+  .col1,.col2,.col3 {
+    display: block;
+    width: 100%;
+  }
+  section { width: 90%; }
+  button.float-r {
+    float: none;
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+
+  h2 { line-height: 1.2; }
+  .align-r { text-align: left; }
+
+  .task-summary .col1,
+  .task-summary .col2 {
+    margin-bottom: 20px;
+  }
+
+  .task-details__header {
+    display: none;
+  }
+
+  .task-details li span:first-child {
+    text-indent: 0;
+  }
+
+  .task-details .col1,
+  .task-details .col2,
+  .task-details .col3 {
+    padding: 7px 0;
+    margin: 0;
+  }
+
+  .task-entry .col1 {
+    padding-bottom: 10px;
+  }
+
+  .task-entries__header .col1:before,
+  .task-details .col1:before,
+  .task-entry .col2:before,
+  .task-details .col2:before,
+  .task-entry .col3:before,
+  .task-details .col3:before {
+    color: #000;
+    font-weight: bold;
+    display: block;
+    margin: 0 10px 5px 0;
+  }
+
+  /* adjust label position on mobile */
+  .task-entries__header .col1:before,
+  .task-details .col1:before {
+    content: "Time Entered On";
+  }
+
+  .task-entry .col2:before,
+  .task-details .col2:before {
+    content: "Time Entered";
+  }
+
+  .task-details .col3:before {
+    content: "Notes";
+  }
+
+  .task-entry .col3:before {
+    content: "Date of last entry";
+  }
+
+  .task-entry .col2:before,
+  .task-entry .col3:before,
+  .task-entries__header .col1:before {
+    display: inline-block;
+  }
+}
